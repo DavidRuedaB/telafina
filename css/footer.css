@@ -1,0 +1,106 @@
+/*Redes sociales, contactos, etc..*/
+
+
+
+.pre-footer {
+    background: linear-gradient(to right, #22303f, #3a4a5e); /* Tonos más claros que el footer */
+    padding: 10px;
+    
+    color: #ffffff;
+}
+.footer-links p a{
+    font-size: 20px;
+    padding: 20px;
+    color: white;
+    
+}
+.social-media {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.social-media img {
+    width: 50px; /* Ajusta el tamaño de los logotipos de redes sociales según sea necesario */
+    margin: 0 10px;
+}
+.social-media img:hover{
+    transform: scale(1.2); /* Aumenta ligeramente el tamaño de la imagen al pasar el cursor sobre ella */
+    filter:  brightness(0) saturate(100%) invert(100%); /* Cambia el color de la imagen */
+    transition: transform 0.3s;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.footer-links .left-section,
+.footer-links .middle-section,
+.footer-links .right-section {
+    flex-grow: 1;
+}
+
+.footer-links .left-section p,
+.footer-links .middle-section p,
+.footer-links .right-section p {
+    margin: 5px 0;
+}
+
+.right-section img{
+    width: 30px; 
+}
+.right-section img:hover{
+    transform: scale(1.2); /* Aumenta ligeramente el tamaño de la imagen al pasar el cursor sobre ella */
+    filter:  brightness(0) saturate(100%) invert(100%); /* Cambia el color de la imagen */
+    transition: transform 0.3s;
+}
+.left-section2 {
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos */
+}
+.left-section2 p{
+    margin-right: 10px;
+}
+.left-section2 img {
+    margin-right: 30px; /* Añade un margen a la derecha de la imagen para separarla del texto */
+    width: 30px;
+}
+
+
+
+
+
+
+/*Pie de página*/
+
+
+
+footer {
+    background: linear-gradient(to right, #252c33, #425264);
+    background-size: auto 5px; /* Ancho de la línea recta horizontal */
+    background-position: center bottom; /* Posiciona la línea en la parte inferior */
+    color: #ffffff;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.left-section p {
+    margin: 0;
+}
+
+.right-section p {
+    margin: 0;
+}
+
+.right-section img {
+    max-width: 100px; /* Cambia este valor según sea necesario */
+    max-height: 80px;
+    margin-left: 10px; /* Espacio entre el texto de copyright y el logo */
+}

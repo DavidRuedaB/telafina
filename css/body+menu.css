@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* Color de fondo blanco para el resto de la página */
+}
+
+header {
+    background: linear-gradient(to right, #252c33, #425264); /* Fondo degradado de azul oscuro a negro */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave debajo del encabezado */
+}
+
+.logo img {
+    width: 90px; /* Ajusta el ancho del logo según sea necesario */
+    height: 70px;
+    margin-left: 30px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 15px; /* Espacio entre cada elemento del menú */
+}
+
+nav ul li a.menu-item {
+    text-decoration: none;
+    color: #ffffff; /* Texto en blanco */
+    font-weight: bold;
+    font-size: 16px; /* Tamaño de texto */
+    padding: 8px 16px; /* Espaciado interno */
+    border-radius: 15px; /* Esquinas redondeadas */
+    background: linear-gradient(to left, #224a94, #6254e2 );/* Fondo blanco */
+    transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+}
+
+nav ul li a.menu-item:hover {
+    background-color: #f2f2f2; /* Cambio de color de fondo al pasar el ratón */
+}
+
+
+/*Barra deslizante de Mercerica*/
+
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: calc(100% + 7px);
+    left: 0;
+    background-color: #f9f9f9;
+    min-width: 150px;
+    padding: 8px 0;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #333;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    animation: slideDown 0.5s forwards;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
